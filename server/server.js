@@ -43,8 +43,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
-// ✅ Handle preflight requests for all routes
-app.options('/*', cors());
+// ✅ Preflight is handled by the cors() middleware above
 
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
