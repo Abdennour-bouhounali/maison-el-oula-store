@@ -20,6 +20,12 @@ connectDB();
 
 const app = express();
 
+// CORS configuration
+app.use(cors({
+  origin: ['https://maison-el-oula.vercel.app', 'http://localhost:5173'],
+  credentials: true
+}));
+
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
@@ -28,7 +34,6 @@ app.use(express.json());
 app.use(helmet({
   crossOriginResourcePolicy: false,
 }));
-app.use(cors());
 
 // Define routes
 app.use('/api/products', productRoutes);
