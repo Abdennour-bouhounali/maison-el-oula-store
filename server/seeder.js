@@ -27,8 +27,8 @@ const sampleProducts = [
     countInStock: 50,
     weight: '100g',
     slug: 'poudre-citron',
-    ingredients: { fr: '100% Citron' },
-    usage_instructions: { fr: 'Ajouter une cuillère à café dans votre thé ou gâteau.' }
+    ingredients: { fr: ['100% Citron'] },
+    usage: { fr: 'Ajouter une cuillère à café dans votre thé ou gâteau.' }
   },
   {
     name: {
@@ -47,8 +47,8 @@ const sampleProducts = [
     countInStock: 30,
     weight: '100g',
     slug: 'poudre-orange',
-    ingredients: { fr: '100% Orange' },
-    usage_instructions: { fr: 'Idéal pour les marinades et les zestes de gâteaux.' }
+    ingredients: { fr: ['100% Orange'] },
+    usage: { fr: 'Idéal pour les marinades et les zestes de gâteaux.' }
   },
   {
     name: {
@@ -67,8 +67,8 @@ const sampleProducts = [
     countInStock: 10,
     weight: '50g',
     slug: 'poudre-menthe',
-    ingredients: { fr: '100% Menthe Poivrée' },
-    usage_instructions: { fr: 'Parfait pour le thé à la menthe instantané.' }
+    ingredients: { fr: ['100% Menthe Poivrée'] },
+    usage: { fr: 'Parfait pour le thé à la menthe instantané.' }
   },
   {
     name: {
@@ -87,8 +87,8 @@ const sampleProducts = [
     countInStock: 4,
     weight: '100g',
     slug: 'poudre-ail',
-    ingredients: { fr: '100% Ail' },
-    usage_instructions: { fr: 'Une pincée suffit pour relever vos sauces.' }
+    ingredients: { fr: ['100% Ail'] },
+    usage: { fr: 'Une pincée suffit pour relever vos sauces.' }
   },
   {
     name: {
@@ -107,8 +107,8 @@ const sampleProducts = [
     countInStock: 100,
     weight: '100g',
     slug: 'poudre-oignon',
-    ingredients: { fr: '100% Oignon' },
-    usage_instructions: { fr: 'Sublime vos soupes et bouillons.' }
+    ingredients: { fr: ['100% Oignon'] },
+    usage: { fr: 'La base de toutes vos marinades et sauces.' }
   }
 ];
 
