@@ -22,7 +22,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: ['https://maison-el-oula.vercel.app', 'http://localhost:5173'],
+  origin: "https://maison-el-oula.vercel.app",
   credentials: true
 }));
 
