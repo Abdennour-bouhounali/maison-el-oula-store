@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "La Maison El Oula",
+    "subtitle": "Le meilleur de la nature algérienne, pur et artisanal.",
+    "cta": "Découvrir nos produits"
+  },
+  "about": {
+    "title": "Tradition & Pureté",
+    "subtitle": "Notre Histoire",
+    "mission_title": "Notre Mission",
+    "mission_text": "La Maison El Oula valorise les saveurs naturelles à travers des poudres de fruits, légumes et plantes soigneusement séchés. Notre mission est d’offrir des produits simples, naturels et pratiques pour la cuisine et les boissons du quotidien.",
+    "story_title": "Une Passion Transmise",
+    "story_text": "L'aventure a commencé avec une idée simple : capturer l'essence de la nature algérienne dans un format pratique sans perdre une miette de sa richesse. Chaque sachet de La Maison El Oula raconte une histoire de patience, de soleil et de respect pour la terre.",
+    "process": {
+      "title": "Notre Processus Qualité",
+      "step1_title": "Sélection Rigoureuse",
+      "step1_desc": "Nous choisissons uniquement les meilleurs fruits et plantes, récolتés à maturité parfaite.",
+      "step2_title": "Séchage Doux",
+      "step2_desc": "Un processus lent à basse température pour préserver vitamines et arômes.",
+      "step3_title": "Mouture Fine",
+      "step3_desc": "Une transformation artisanale pour obtenir une poudre d'une finesse exceptionnelle."
+    }
+  },
+  "products": {
+    "title": "Nos Essences",
+    "subtitle": "Une sélection rigoureuse de poudres naturelles pour sublimer votre cuisine au quotidien.",
+    "price": "DA",
+    "discover": "Découvrir le produit",
+    "badges": {
+      "natural": "100% Naturel",
+      "organic": "Biologique"
+    }
+  },
+  "usages": {
+    "title": "L'Art d'utiliser nos poudres",
+    "subtitle": "Inspirations Créatives",
+    "culinary_title": "Cuisine Gourmet",
+    "culinary_desc": "Sublimez vos plats et marinades avec l'intensité aromatique de nos poudres naturelles.",
+    "beverages_title": "Boissons Vitalité",
+    "beverages_desc": "Ajoutez une touche de fraîcheur à vos thés, smoothies et eaux détox en un instant.",
+    "wellness_title": "Bien-être Naturel",
+    "wellness_desc": "Profitez des bienfaits des plantes et fruits séchés pour votre routine santé quotidienne.",
+    "lemon_title": "Fraîcheur Citronnée",
+    "lemon_desc": "Une pincée dans votre eau fraîche pour une boisson détox et énergisante instantanée.",
+    "orange_title": "Douceur Pâtissière",
+    "orange_desc": "Sublimez vos gâteaux et biscuits avec l'intensité aromatique de l'orange séchée.",
+    "mint_title": "Thé à l'Orientale",
+    "mint_desc": "Retrouvez le goût authentique du thé à la menthe en un clin d'œil, sans feuilles fraîches.",
+    "cooking_title": "Cuisine Gourmet",
+    "cooking_desc": "Ail et oignon en poudre pour des marinades et des sauces au goût profond et authentique.",
+    "recipes_title": "Recettes Naturelles",
+    "recipes_desc": "Laissez libre cours à votre imagination pour des créations culينaires 100% saines."
+  },
+  "contact": {
+    "title": "Parlons Nature",
+    "subtitle": "Contactez-nous",
+    "desc": "Une question ? Un projet ? Nous sommes à votre écoute pour vous conseiller sur nos produits naturels.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "message": "Votre message",
+      "send": "Envoyer le message",
+      "placeholder_name": "Votre nom",
+      "placeholder_email": "votre@email.com",
+      "placeholder_message": "Comment pouvons-nous vous aider ?"
+    },
+    "info": {
+      "title": "Nos Coordonnées",
+      "address": "Alger, Algérie",
+      "phone": "+213 555 00 00 00",
+      "email": "contact@maisoneloula.com",
+      "social": "Suivez-nous"
+    }
+  },
+  "footer": {
+    "brand_desc": "La quintessence de la nature algérienne, transformée avec passion et savoir-faire pour sublimer vos créations culينaires.",
+    "links_title": "Navigation",
+    "products_title": "Nos Poudres",
+    "contact_title": "Contact",
+    "copyright": "Tous droits réservés.",
+    "made_in": "Fait avec passion en Algérie"
+  },
+  "showcase": {
+    "title": "Design & Pureté",
+    "subtitle": "Notre Écrin",
+    "desc": "Un emballage doypack en aluminium (90x150 mm) conçu pour préserver la fraîcheur et les arômes intenses de nos poudres naturelles."
+  },
+  "seo": {
+    "home_title": "Accueil",
+    "home_desc": "Découvrez le meilleur de la nature algérienne avec nos poudres naturelles de fruits, légumes et plantes séchés. Pur, artisanal et 100% naturel.",
+    "products_title": "Nos Produits",
+    "products_desc": "Explorez notre gamme de poudres naturelles : Citron, Orange, Menthe, Ail et Oignon. La pureté absolue pour vos recettes.",
+    "about_title": "À Propos",
+    "about_desc": "L'histoire de La Maison El Oula, notre mission de valorisation du terroir algérien et notre processus de séchage artisanal.",
+    "contact_title": "Contact",
+    "contact_desc": "Contactez La Maison El Oula pour toute question sur nos produits naturels ou collaborations."
+  }
+}
