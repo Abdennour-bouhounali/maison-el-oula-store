@@ -4,9 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 const testUpload = async () => {
-  const url = 'http://localhost:5000/upload?folder=test-product-folder';
+  const url = 'http://localhost:5000/api/upload?folder=test-product-folder';
   const formData = new FormData();
-
+  
   // Create a dummy image file for testing
   const dummyFilePath = path.join(__dirname, 'dummy.png');
   fs.writeFileSync(dummyFilePath, 'dummy content');
@@ -21,7 +21,7 @@ const testUpload = async () => {
     });
 
     console.log('Upload Response:', response.data);
-
+    
     if (response.data.success && response.data.image.includes('test-product-folder')) {
       console.log('Test Passed: Folder created and image saved correctly.');
     } else {

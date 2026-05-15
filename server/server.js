@@ -36,11 +36,11 @@ app.use(helmet({
 }));
 
 // Define routes
-app.use('/products', productRoutes);
-app.use('/users', userRoutes);
-app.use('/orders', orderRoutes);
-app.use('/upload', uploadRoutes);
-app.use('/analytics', analyticsRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/upload', uploadRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 // Static folders
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
