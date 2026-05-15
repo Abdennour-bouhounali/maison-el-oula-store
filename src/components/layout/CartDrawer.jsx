@@ -21,51 +21,45 @@ const CartDrawer = () => {
     <AnimatePresence>
       {isCartOpen && (
         <>
-          {/* Backdrop */}
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsCartOpen(false)}
             className="fixed inset-0 bg-nature-green/40 backdrop-blur-sm z-[100]"
           />
-
-          {/* Drawer */}
-          <motion.div
+          <motion.div 
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-nature-white shadow-2xl z-[101] flex flex-col"
+            className="fixed right-0 top-0 h-full w-full max-w-md bg-nature-white z-[101] shadow-2xl flex flex-col"
           >
-            {/* Header */}
             <div className="p-8 border-b border-nature-beige flex justify-between items-center bg-nature-white">
               <div className="flex items-center gap-3">
-                <ShoppingBag className="text-nature-green w-6 h-6" />
-                <h2 className="text-2xl font-black text-nature-green uppercase tracking-tighter">Votre Panier</h2>
+                <div className="w-10 h-10 bg-nature-green text-nature-white rounded-xl flex items-center justify-center">
+                  <ShoppingBag className="w-5 h-5" />
+                </div>
+                <h2 className="text-2xl font-black text-nature-green uppercase tracking-tighter italic">Votre panier</h2>
               </div>
               <button 
                 onClick={() => setIsCartOpen(false)}
-                className="p-2 hover:bg-nature-beige rounded-xl transition-colors"
+                className="w-10 h-10 border border-nature-beige rounded-xl flex items-center justify-center text-nature-green hover:bg-nature-beige transition-colors"
               >
-                <X className="w-6 h-6 text-nature-green" />
+                <X className="w-5 h-5" />
               </button>
             </div>
 
-            {/* Cart Items */}
-            <div className="flex-grow overflow-y-auto p-8 space-y-8">
+            <div className="flex-grow overflow-y-auto p-8 space-y-8 scrollbar-hide">
               {cart.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center space-y-6">
-                  <div className="w-24 h-24 bg-nature-beige/30 rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-nature-beige/20 rounded-full flex items-center justify-center">
                     <ShoppingBag className="w-10 h-10 text-nature-green/20" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-nature-green mb-2">Votre panier est vide</h3>
-                    <p className="text-nature-green/60 font-light">Commencez à ajouter des produits naturels pour les voir ici.</p>
+                    <p className="text-nature-green/40 font-bold uppercase tracking-widest text-xs mb-2">Le panier est vide</p>
+                    <p className="text-nature-green/60 text-sm italic">Ajoutez des poudres pour commencer.</p>
                   </div>
-                  <Button onClick={() => setIsCartOpen(false)} className="px-8">
-                    Découvrir nos produits
-                  </Button>
                 </div>
               ) : (
                 cart.map((item) => (
@@ -76,7 +70,7 @@ const CartDrawer = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex gap-6 group"
                   >
-                    <div className={`w-24 h-24 ${item.color} rounded-2xl overflow-hidden flex-shrink-0 p-2`}>
+                    <div className={`w-24 h-24 ${item.color || 'bg-nature-beige/10'} rounded-2xl overflow-hidden flex-shrink-0 p-2`}>
                       <img src={getImageUrl(item.image)} alt={item.id} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                     <div className="flex-grow">
@@ -106,30 +100,22 @@ const CartDrawer = () => {
               )}
             </div>
 
-            {/* Footer Summary */}
             {cart.length > 0 && (
-              <div className="p-8 bg-nature-beige/10 border-t border-nature-beige space-y-6">
-                <div className="space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-nature-green/60 uppercase tracking-widest font-bold">Sous-total</span>
-                    <span className="text-nature-green font-bold">{cartTotal} DA</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-nature-green/60 uppercase tracking-widest font-bold">Livraison</span>
-                    <span className="text-nature-green font-bold italic">Calculée à l'étape suivante</span>
-                  </div>
-                  <div className="flex justify-between text-xl border-t border-nature-beige pt-4">
-                    <span className="text-nature-green font-black uppercase tracking-tighter">Total</span>
-                    <span className="text-nature-green font-black italic">{cartTotal} DA</span>
-                  </div>
+              <div className="p-8 bg-nature-white border-t border-nature-beige space-y-6">
+                <div className="flex justify-between items-end">
+                  <span className="text-nature-green/40 font-bold uppercase tracking-widest text-xs">Sous-total</span>
+                  <span className="text-4xl font-black text-nature-green tracking-tighter italic">{cartTotal} DA</span>
                 </div>
                 <Button 
                   onClick={handleCheckout}
-                  className="w-full py-6 flex items-center justify-center gap-3 text-lg"
+                  className="w-full py-6 flex items-center justify-center gap-4 group"
                 >
-                  Valider la commande
-                  <ArrowRight className="w-5 h-5" />
+                  Passer la commande
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </Button>
+                <p className="text-[10px] text-center text-nature-green/40 font-bold uppercase tracking-widest">
+                  Livraison gratuite à partir de 5000 DA
+                </p>
               </div>
             )}
           </motion.div>

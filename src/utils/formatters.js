@@ -33,11 +33,11 @@ export const getImageUrl = (path) => {
   if (!path) return '/placeholder.png';
   if (path.startsWith('http')) return path;
   
+  // Get base URL from environment (e.g., https://api.yoursite.com)
+  const baseUrl = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000';
+  
   // Ensure path starts with a single slash
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
-  
-  // Use the API URL from environment variables or default to localhost
-  const baseUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000';
   
   return `${baseUrl}${normalizedPath}`;
 };
