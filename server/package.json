@@ -8,6 +8,9 @@
     "data:import": "node seeder.js",
     "data:destroy": "node seeder.js -d"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
