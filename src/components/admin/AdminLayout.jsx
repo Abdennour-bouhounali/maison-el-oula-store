@@ -12,11 +12,24 @@ const AdminLayout = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     const storedUserInfo = localStorage.getItem('userInfo');
-    
-    if (!token) {
+
+    if (!token || !storedUserInfo) {
       navigate('/login');
-    } else if (storedUserInfo) {
-      setUserInfo(JSON.parse(storedUserInfo));
+      return;
+    }
+
+    try {
+      const parsed = JSON.parse(storedUserInfo);
+      if (parsed.role !== 'admin') {
+        // Not an admin — boot them out
+        localStorage.removeItem('token');
+        localStorage.removeItem('userInfo');
+        navigate('/login');
+        return;
+      }
+      setUserInfo(parsed);
+    } catch {
+      navigate('/login');
     }
   }, [navigate]);
 
