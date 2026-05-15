@@ -125,6 +125,7 @@ const importData = async () => {
       role: 'admin',
     });
 
+
     const products = sampleProducts.map((p) => ({ ...p, user: createdUser._id }));
     const createdProducts = await Product.insertMany(products);
 
