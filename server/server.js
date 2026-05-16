@@ -25,6 +25,7 @@ const app = express();
 // ✅ CORS: allow frontend origin(s) from env, fallback to localhost for dev
 const allowedOrigins = [
   process.env.FRONTEND_URL || 'http://localhost:5173',
+  'https://maison-el-oula.vercel.app',
   'http://localhost:5173',
   'http://localhost:3000',
 ];
