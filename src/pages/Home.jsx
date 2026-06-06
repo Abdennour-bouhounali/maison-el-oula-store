@@ -29,6 +29,29 @@ const Home = () => {
 
       <Hero />
       <Transformation />
+      
+      {/* Marquee Separator */}
+      <div className="bg-nature-green text-nature-white py-6 md:py-8 overflow-hidden flex whitespace-nowrap shadow-inner border-y border-nature-green">
+        <motion.div 
+          className="flex gap-8 md:gap-16 items-center text-[10px] md:text-xs font-black uppercase tracking-[0.3em] pl-8 md:pl-16"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+        >
+          {[...Array(6)].map((_, i) => (
+            <React.Fragment key={i}>
+              <span>100% Naturel</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-nature-orange opacity-70" />
+              <span>Sans Conservateurs</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-nature-orange opacity-70" />
+              <span>Ingrédients Intelligents</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-nature-orange opacity-70" />
+              <span>L'Essentiel au Quotidien</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-nature-orange opacity-70" />
+            </React.Fragment>
+          ))}
+        </motion.div>
+      </div>
+
       <Ecosystem />
 
       {/* Product Highlight Section */}
