@@ -2,16 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Area';
+  src: url('/fonts/Area-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Area';
+  src: url('/fonts/Area-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @layer base {
   :root {
-    --color-nature-green: #4A5D23;
-    --color-nature-beige: #F2E8D5;
-    --color-nature-white: #FDFBF7;
+    --color-nature-green: #00934A;
+    --color-nature-beige: #F7F3EE;
+    --color-nature-white: #FFFFFF;
   }
 
   body {
     @apply bg-nature-white text-nature-green antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Area', 'Inter', sans-serif;
   }
 
   [dir='rtl'] {
@@ -56,9 +70,11 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   @apply bg-nature-white;
 }
+
 ::-webkit-scrollbar-thumb {
   @apply bg-nature-beige rounded-full hover:bg-nature-green/20 transition-colors;
 }

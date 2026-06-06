@@ -83,7 +83,7 @@ const ProductDetail = () => {
   return (
     <div className="pt-24 pb-12 bg-nature-white">
       <SEO 
-        title={`${name} | La Maison El Oula`}
+        title={`${name} | FISORA`}
         description={description}
       />
 

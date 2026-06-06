@@ -9,22 +9,23 @@ export default {
       colors: {
         nature: {
           green: {
-            DEFAULT: '#4A5D23',
-            dark: '#3A4A1C',
-            light: '#6B813D',
+            DEFAULT: '#00934A',
+            dark: '#006228',
+            light: '#00BB59',
+            verydark: '#042110',
           },
           beige: {
-            DEFAULT: '#F2E8D5',
-            dark: '#E5D5B8',
-            light: '#F9F4EB',
+            DEFAULT: '#F7F3EE',
+            dark: '#EAE1D5',
+            light: '#FFFFFF',
           },
-          white: '#FDFBF7',
-          lemon: '#EFD26E',
-          orange: '#E8A85D',
+          white: '#FFFFFF',
+          lemon: '#00BB59',
+          orange: '#00934A',
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Area', 'Inter', 'sans-serif'],
         arabic: ['Noto Sans Arabic', 'sans-serif'],
       },
       borderRadius: {
@@ -39,3 +40,4 @@ export default {
   },
   plugins: [],
 }
+

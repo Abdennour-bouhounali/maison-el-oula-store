@@ -39,13 +39,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-nature-green rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-premium">
-              <Leaf className="text-nature-white w-7 h-7" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-black tracking-tighter text-nature-green leading-none">EL OULA</span>
-              <span className="text-[10px] font-bold tracking-[0.3em] text-nature-orange uppercase">Maison Naturelle</span>
-            </div>
+            <img src="/logo.svg" alt="FISORA" className="h-10 w-auto group-hover:scale-105 transition-transform duration-500" />
           </Link>
 
           {/* Desktop Navigation */}

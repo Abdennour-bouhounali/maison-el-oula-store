@@ -9,8 +9,9 @@ import SEO from '../components/ui/SEO';
 import ProductCard from '../components/ui/ProductCard';
 
 import Hero from '../components/sections/Hero';
+import Transformation from '../components/sections/Transformation';
+import Ecosystem from '../components/sections/Ecosystem';
 import FeatureShowcase from '../components/sections/FeatureShowcase';
-
 import { USAGES } from '../constants';
 import { useProducts } from '../hooks/useProducts';
 import { getImageUrl } from '../utils/formatters';
@@ -20,13 +21,15 @@ const Home = () => {
   const { products, loading } = useProducts();
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-clip">
       <SEO 
         title={t('seo.home_title')} 
         description={t('seo.home_desc')} 
       />
 
       <Hero />
+      <Transformation />
+      <Ecosystem />
 
       {/* Product Highlight Section */}
       <Section className="bg-nature-white">

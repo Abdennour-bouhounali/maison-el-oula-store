@@ -43,12 +43,7 @@ const Footer = () => {
           {/* Brand Identity */}
           <div className="lg:col-span-4 space-y-8">
             <Link to="/" className="flex items-center space-x-3 group w-fit">
-              <div className="w-12 h-12 bg-nature-white rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-xl shadow-black/10">
-                <Leaf className="w-7 h-7 text-nature-green" />
-              </div>
-              <span className="text-3xl font-bold tracking-tighter uppercase">
-                Maison <span className="text-nature-lemon">Oula</span>
-              </span>
+              <img src="/logo-white.svg" alt="FISORA" className="h-12 w-auto group-hover:scale-105 transition-transform duration-500" />
             </Link>
             <p className="text-nature-beige/60 text-lg leading-relaxed max-w-sm font-light">
               {t('footer.brand_desc')}
@@ -149,7 +144,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-nature-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-sm text-nature-beige/40">
           <div className="flex items-center gap-4">
-            <span>&copy; {currentYear} La Maison El Oula. {t('footer.copyright')}</span>
+            <span>&copy; {currentYear} FISORA. {t('footer.copyright')}</span>
             <span className="hidden md:block w-1 h-1 bg-nature-white/10 rounded-full" />
             <Link to="/privacy" className="hover:text-nature-lemon transition-colors">Privacy Policy</Link>
           </div>

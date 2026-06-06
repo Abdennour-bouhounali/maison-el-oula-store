@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 const SEO = ({ title, description, image, url, type = 'website' }) => {
   const { t, i18n } = useTranslation();
   
-  const siteTitle = t('meta.title') || 'La Maison El Oula';
+  const siteTitle = t('meta.title') || 'FISORA';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const siteDescription = description || t('hero.subtitle');
   const siteUrl = url || window.location.href;
-  const siteImage = image || '/maison_el_oula_hero_premium_1778746442341.png';
+  const siteImage = image || '/fisora_hero_premium_1778746442341.png';
 
   return (
     <Helmet>

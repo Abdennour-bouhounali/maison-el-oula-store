@@ -75,7 +75,7 @@ const TrackOrder = () => {
 
   return (
     <div className="pt-32 pb-24 bg-nature-white min-h-screen">
-      <SEO title="Suivre ma commande | La Maison El Oula" description="Suivez l'état de votre commande de produits naturels en temps réel." />
+      <SEO title="Suivre ma commande | FISORA" description="Suivez l'état de votre commande de produits naturels en temps réel." />
       
       <Section>
         <div className="max-w-4xl mx-auto">

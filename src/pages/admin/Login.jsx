@@ -48,7 +48,7 @@ const Login = () => {
           </div>
           <div>
             <h1 className="text-3xl font-black text-nature-green tracking-tighter uppercase">Administration</h1>
-            <p className="text-[10px] font-black text-nature-green/40 uppercase tracking-widest">La Maison El Oula</p>
+            <p className="text-[10px] font-black text-nature-green/40 uppercase tracking-widest">FISORA</p>
           </div>
         </div>
 

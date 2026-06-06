@@ -10,9 +10,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-bold text-nature-green tracking-tight">
-              La Maison El Oula
-            </span>
+            <a href="/">
+              <img src="/logo.svg" alt="FISORA" className="h-10 w-auto" />
+            </a>
           </div>
           
           <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">

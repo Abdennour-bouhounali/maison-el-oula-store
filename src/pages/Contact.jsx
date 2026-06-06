@@ -93,7 +93,7 @@ const Contact = () => {
                 {[
                   { icon: MapPin, label: "Adresse", value: "Cité des Jardins, Alger, Algérie" },
                   { icon: Phone, label: "Téléphone", value: "+213 (0) 555 12 34 56" },
-                  { icon: Mail, label: "Email", value: "contact@maisoneloula.dz" },
+                  { icon: Mail, label: "Email", value: "contact@fisora.dz" },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6 group">
                     <div className="w-14 h-14 bg-nature-beige/30 rounded-2xl flex items-center justify-center group-hover:bg-nature-green group-hover:text-nature-white transition-all duration-500">

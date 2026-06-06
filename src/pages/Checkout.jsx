@@ -120,7 +120,7 @@ const Checkout = () => {
 
   return (
     <div className="pt-32 pb-24 bg-nature-white min-h-screen">
-      <SEO title="Checkout | La Maison El Oula" description="Finalisez votre commande de produits naturels." />
+      <SEO title="Checkout | FISORA" description="Finalisez votre commande de produits naturels." />
       
       <Section>
         <div className="mb-16">

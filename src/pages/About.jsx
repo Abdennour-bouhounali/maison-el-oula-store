@@ -77,8 +77,8 @@ const About = () => {
           >
             <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[1px] border-nature-beige/20 bg-nature-white p-4">
               <img 
-                src="/maison_el_oula_hero_premium_1778746442341.png" 
-                alt="La Maison El Oula - Natural Heritage" 
+                src="/fisora_hero_premium_1778746442341.png" 
+                alt="FISORA - Natural Heritage" 
                 loading="lazy"
                 className="w-full h-auto rounded-[3rem] shadow-inner"
               />
@@ -98,8 +98,8 @@ const About = () => {
           >
             <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[1px] border-nature-beige/20 bg-nature-white p-4">
               <img 
-                src="/maison_el_oula_founder_story_1778750127594.png" 
-                alt="Artisanat Maison Oula - The Process" 
+                src="/fisora_founder_story_1778750127594.png" 
+                alt="Artisanat FISORA - The Process" 
                 loading="lazy"
                 className="w-full h-auto rounded-[3rem] shadow-inner"
               />

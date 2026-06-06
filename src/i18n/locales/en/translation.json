@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "La Maison El Oula",
+    "title": "FISORA",
     "subtitle": "The best of Algerian nature, pure and artisanal.",
     "cta": "Explore our products"
   },
@@ -14,9 +14,9 @@
     "title": "Tradition & Purity",
     "subtitle": "Our Story",
     "mission_title": "Our Mission",
-    "mission_text": "La Maison El Oula values natural flavors through carefully dried fruit, vegetable, and plant powders. Our mission is to offer simple, natural, and practical products for everyday cooking and beverages.",
+    "mission_text": "FISORA values natural flavors through carefully dried fruit, vegetable, and plant powders. Our mission is to offer simple, natural, and practical products for everyday cooking and beverages.",
     "story_title": "A Passion Passed Down",
-    "story_text": "The adventure began with a simple idea: capturing the essence of Algerian nature in a practical format without losing a bit of its richness. Each pouch of La Maison El Oula tells a story of patience, sun, and respect for the earth.",
+    "story_text": "The adventure began with a simple idea: capturing the essence of Algerian nature in a practical format without losing a bit of its richness. Each pouch of FISORA tells a story of patience, sun, and respect for the earth.",
     "process": {
       "title": "Our Quality Process",
       "step1_title": "Rigorous Selection",
@@ -74,7 +74,7 @@
       "title": "Contact Details",
       "address": "Algiers, Algeria",
       "phone": "+213 555 00 00 00",
-      "email": "contact@maisoneloula.com",
+      "email": "contact@fisora.com",
       "social": "Follow Us"
     }
   },
@@ -97,8 +97,51 @@
     "products_title": "Our Products",
     "products_desc": "Explore our range of natural powders: Lemon, Orange, Mint, Garlic, and Onion. Absolute purity for your recipes.",
     "about_title": "About Us",
-    "about_desc": "The story of La Maison El Oula, our mission to promote Algerian terroir, and our artisanal drying process.",
+    "about_desc": "The story of FISORA, our mission to promote Algerian terroir, and our artisanal drying process.",
     "contact_title": "Contact",
-    "contact_desc": "Contact La Maison El Oula for any questions about our natural products or collaborations."
+    "contact_desc": "Contact FISORA for any questions about our natural products or collaborations."
+  },
+  "transformation": {
+    "section_label": "The Process",
+    "step_of": "Step {{current}} of {{total}}",
+    "moisture_label": "Moisture content",
+    "intensity_label": "Flavor intensity",
+    "steps": [
+      {
+        "eyebrow": "01 — Harvest",
+        "title": "The Fresh Harvest",
+        "desc": "Vibrant Mediterranean oranges picked at peak ripeness, bursting with natural sugars and essential oils.",
+        "details": ["Harvested at 90% color development", "High Brix sugar content", "Cold-chain preserved"],
+        "caption": "Fresh whole oranges"
+      },
+      {
+        "eyebrow": "02 — Preparation",
+        "title": "Careful Preparation",
+        "desc": "Oranges are washed, inspected, and sliced to uniform thickness for perfectly even dehydration.",
+        "details": ["4mm precision slicing", "No additives or preservatives", "Food-grade handling"],
+        "caption": "Sliced & prepared"
+      },
+      {
+        "eyebrow": "03 — Dehydration",
+        "title": "Slow Dehydration",
+        "desc": "Gentle heat removes water over 18–24 hours, protecting volatile aroma compounds and vitamins.",
+        "details": ["50–60°C controlled temperature", "Airflow-optimized trays", "Moisture drops to 12%"],
+        "caption": "Gentle drying in progress"
+      },
+      {
+        "eyebrow": "04 — Concentration",
+        "title": "Flavor Concentration",
+        "desc": "As water evaporates, flavor compounds intensify. Every gram carries the punch of a whole orange.",
+        "details": ["10× flavor concentration", "Natural Maillard browning", "Aroma fully locked in"],
+        "caption": "Essence concentrated"
+      },
+      {
+        "eyebrow": "05 — Final Product",
+        "title": "FISORA Orange Powder",
+        "desc": "Shelf-stable, intensely flavored, ready for premium food and beverage applications worldwide.",
+        "details": ["12-month shelf life", "No cold chain required", "1 kg replaces 10 kg fresh"],
+        "caption": "FISORA ready"
+      }
+    ]
   }
 }

@@ -1,6 +1,6 @@
-# 🌿 La Maison El Oula - Premium Natural Store
+# 🌿 FISORA - Premium Natural Store
 
-Welcome to the official repository of **La Maison El Oula**, a premium e-commerce platform dedicated to high-quality Algerian natural powders (Fruits, Vegetables, and Herbs).
+Welcome to the official repository of **FISORA**, a premium e-commerce platform dedicated to high-quality Algerian natural powders (Fruits, Vegetables, and Herbs).
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
@@ -28,8 +28,8 @@ Welcome to the official repository of **La Maison El Oula**, a premium e-commerc
 
 ### 1. Clone the repository
 ```bash
-git clone git@github.com:Abdennour-bouhounali/maison-el-oula-store.git
-cd maison-el-oula-store
+git clone git@github.com:Abdennour-bouhounali/fisora-store.git
+cd fisora-store
 ```
 
 ### 2. Backend Setup
